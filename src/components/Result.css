@@ -1,0 +1,55 @@
+.result-wrapper {
+  margin: 40px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.result-title {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.result-card {
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+.result-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.eligible .status {
+  color: #00ffae;
+}
+
+.not-eligible .status {
+  color: #ff6b6b;
+}
+
+.reason {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #eee;
+}
