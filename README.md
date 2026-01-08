@@ -99,19 +99,9 @@ This project is developed for **academic purposes** to understand:
 
 ---
 
-## 👩‍💻 Author
-
-Kiruthihashree S
-Pre-final Year, Computer Science Engineering
-Sri Eshwar College of Engineering
 
 ---
 
-## 📄 License
-
-This project is intended for **educational use only**.
-
----
 
 ## ✅ How to save & push
 
