@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import StudentForm from "./components/StudentForm";
+import CompanyList from "./components/CompanyList";
+import Result from "./components/Result";
+import "./App.css";
 
 function App() {
+  const [student, setStudent] = useState(null);
+  const [result, setResult] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Placement Eligibility Checker</h1>
+
+      <StudentForm onSubmit={setStudent} />
+
+      {student && <CompanyList student={student} setResult={setResult} />}
+
+      {result.length > 0 && <Result result={result} />}
     </div>
   );
 }
